@@ -1,0 +1,28 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    string calculate;
+    double N1,N2;
+    cout<<"Enter 1st Number:";
+    cin>>N1;
+    cout<<"Enter Calculate(+)(-)(*)(/):";
+    cin>>calculate;
+    cout<<"Enter 2nd Number:";
+    cin>>N2;
+
+    if (calculate=="+"){
+        cout<<"1st Number added with 2nd Number is:"<<N1+N2;  
+    } else if (calculate=="-"){
+        cout<<"2nd Number subtracted from 1st Number is:"<<N1-N2;
+    } else if (calculate=="*"){
+        cout<<"1st Number multiplied by 2nd Number is:"<<N1*N2;
+    } else if (calculate=="/"){
+        cout<<"1st Number divided by 2nd Number is:"<<N1/N2;
+    } 
+    else{
+        cout<<"Please Check The Operator!!!";
+    }
+    return 0;
+}
